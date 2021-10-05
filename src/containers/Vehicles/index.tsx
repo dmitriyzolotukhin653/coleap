@@ -45,7 +45,11 @@ const Vehicles: React.FunctionComponent = () => {
           selectedVehicleData={selectedVehicle}
         />
       )}
-      {vehiclesError && <Typography color={'red'}>{vehiclesError}</Typography>}
+      {vehiclesError && (
+        <Typography style={{ textAlign: 'center' }} color={'red'}>
+          {vehiclesError}
+        </Typography>
+      )}
     </>
   );
 };
